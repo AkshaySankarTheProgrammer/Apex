@@ -1,0 +1,9 @@
+#signin {
+    color: blanchedalmond;
+    font-size: 30px;
+}
+.image {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
