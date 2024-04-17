@@ -1,8 +1,12 @@
 import "./index.css";
 import "./BookNow.css";
-
+import { useNavigate } from "react-router";
 
 const BookNow = () => {
+
+    function sendConf() {
+        alert("Booking Confirmed.");
+    }
 
     function dispMsg(){
         const arr = [];
@@ -28,6 +32,8 @@ const BookNow = () => {
             alert("Please agree to the T&C!");
         }
     }
+
+    let nv = useNavigate();
 
     return (  
         <div>
@@ -71,7 +77,7 @@ const BookNow = () => {
                         <input type="checkbox" id="cb" name="disclaimer" /> I agree to the above terms and conditions.<br /><br />
                     
                         <div className="btnContainer">
-                            <button className="loginBtn" type="button" onClick={dispMsg}>Submit</button>
+                            <a className="temp1 loginBtn" type="button" onClick={sendConf}>Submit</a>
                         </div>
                         <br /><br />
                     </form>

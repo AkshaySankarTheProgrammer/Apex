@@ -4,6 +4,7 @@ import img1 from "./Images/hatchback.png";
 import img2 from "./Images/sedan.png";
 import img3 from "./Images/suv.png";
 import img4 from "./Images/luxury.png";
+import { useNavigate } from "react-router";
 
 const Vehicles = () => {
 /*
@@ -18,10 +19,14 @@ const Vehicles = () => {
             }
         });
     });
+    
 
     const hidden showElements = document.querySelectorAll('.hidden show');
     hidden showElements.forEach((el) => observer.observe(el));
 */
+
+    let nv = useNavigate();
+
     return (  
         <div>
             <h1 className="Models hidden show show"> Models </h1>
@@ -233,7 +238,7 @@ const Vehicles = () => {
                     </div>
                     <br /><br /><br />
                     <div className="btnContainer">
-                        <button className="loginBtn hidden show" type="submit"> <a href="./booknow.html"> Book Now </a></button>
+                        <a onClick={() => nv({pathname: "/booknow"})} className="loginBtn hidden show temp1" > Book Now </a>
                     </div>
                     <br /><br /><br /><br />
                 </div>

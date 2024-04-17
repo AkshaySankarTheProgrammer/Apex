@@ -1,7 +1,7 @@
 import { Routes } from 'react-router';
 import About from './About';
 import BookNow from './BookNow';
-//import Confirmation from './Confirmation';
+import Confirmation from './Confirmation';
 import Home from './Home';
 //import Login from './Login';
 import Navbar from './Navbar';
@@ -10,7 +10,7 @@ import Service from './Service';
 import TestDrive from './TestDrive';
 import Vehicles from './Vehicles';
 import './index.css';
-import { Route} from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -23,7 +23,8 @@ function App() {
               <Route path="/service" element={<Service />} /> 
               <Route path="/testdrive" element={<TestDrive />} /> 
               <Route path="/booknow" element={<BookNow />} /> 
-              <Route path="/about" element={<About />}/> 
+              <Route path="/about" element={<About />}/>  
+              <Route path="/confirmation" element={<Confirmation />}/> 
             </Routes>
           </div> 
     </div>

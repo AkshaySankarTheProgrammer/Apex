@@ -228,6 +228,11 @@ button{
     font-family: 'Poppins', sans-serif;
 }
 
+.temp1 {
+    text-align: center;
+    padding-top: 30px;
+}
+
 .loginBtn{
     align-items: center;
 }
